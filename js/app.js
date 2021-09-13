@@ -104,7 +104,7 @@ const showDetails=product=>{
     <img class="product-image" src="${product.image}" alt="">
   </div>
   <div class="product-info"> 
-    <h2>${product.title}</h2>
+    <h2>${product.title.slice(0,30)}</h2>
     <p>${product.category}</p>
     <p>Product Description:<p>
     <p class="padding">${product.description.slice(0,100)}</p>
