@@ -93,24 +93,25 @@ const loadDetails=productId=>{
     .then((data) => showDetails(data));
 }
 
-// Show specific product details
-const showDetails=product=>{
-  document.getElementById("product-details").textContent='';
-  const detailsDiv=document.createElement('div');
-  detailsDiv.innerHTML=`
-  <div class="product-image-div">
-    <img class="product-image" src="${product.image}" alt="">
-  </div>
-  <div class="product-info"> 
-    <h3>${product.title}</h3>
-    <p>${product.category}</p>
-    <h4>Product Description:</h4>
-    <p class="padding">${product.description}</p>
-    <p>Rating: ${product.rating.rate} (${product.rating.count} <small>Ratings</small>)</p>
-    <h2>Price: $<span class="color">${product.price}</span></h2>
-    <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-  </div >
+// Show specific product details (code is workig fine but responsiveness is not so good, different screen size is creating view problem)
+
+// const showDetails=product=>{
+//   document.getElementById("product-details").textContent='';
+//   const detailsDiv=document.createElement('div');
+//   detailsDiv.innerHTML=`
+//   <div class="product-image-div">
+//     <img class="product-image" src="${product.image}" alt="">
+//   </div>
+//   <div class="product-info"> 
+//     <h3>${product.title}</h3>
+//     <p>${product.category}</p>
+//     <p>Product Description:<p>
+//     <p class="padding">${product.description}</p>
+//     <p>Rating: ${product.rating.rate} (${product.rating.count} <small>Ratings</small>)</p>
+//     <h2>Price: $<span class="color">${product.price}</span></h2>
+//     <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
+//   </div >
   
-  `;
-document.getElementById("product-details").appendChild(detailsDiv);
-}
+//   `;
+// document.getElementById("product-details").appendChild(detailsDiv);
+// }
