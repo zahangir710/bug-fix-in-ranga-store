@@ -20,7 +20,7 @@
   <header></header>
   <main class="main">
     <h1 class="center">Sundarban Online Store</h1>
-    <div class="search-field">
+    <!-- <div class="search-field">
       <div class="search-box">
         <input id="input-field" class="search-field" type="text"/>
         <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
@@ -28,10 +28,24 @@
           Search
         </button>
       </div>
-    </div>
-    <!-- product details row -->
-    <div id="product-details" class="product-details-container">
+    </div> -->
 
+    <div class="row">
+        <div class="search-div">
+          <input id="input-field" type="text" class="input-area">
+          <button type="button" class="button" data-toggle="button" aria-pressed="false"
+          autocomplete="off" id="search-btn" onclick="loadProducts()">
+          Search
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- product details row -->
+    <div class="row">
+      <div id="product-details" class="product-details-container">
+
+      </div>
     </div>
     <!-- all all-products row  -->
     <div class="row">
