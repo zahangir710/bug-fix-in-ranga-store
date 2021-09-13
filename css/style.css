@@ -89,6 +89,9 @@ body {
 .color{
   color: orange;
 }
+.color-g{
+  color: green;
+}
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;

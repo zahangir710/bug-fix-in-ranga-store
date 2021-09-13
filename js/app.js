@@ -22,8 +22,8 @@ const showProducts = (products) => {
           <img class="product-image" src=${image}></img>
       </div>
       <h3>${product.title}</h3>
-      <p>Category: ${product.category}</p>
-      <p>Rating: ${averageRating} (${numberOfRating} <small>Ratings</small>)</p>
+      <p>Category: <span class="color-g">${product.category}</span></p>
+      <p>Rating: <span class="color">${averageRating}</span> (${numberOfRating} <small>Ratings</small>)</p>
       <h2>Price: $<span class="color">${product.price}</span></h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button onclick="loadDetails(${product.id})" id="details-btn" class="btn btn-danger">Details</button></div>
@@ -105,10 +105,10 @@ const showDetails=product=>{
   </div>
   <div class="product-info"> 
     <h2>${product.title.slice(0,30)}</h2>
-    <p>${product.category}</p>
+    <p> Category: <span class="color-g">${product.category}</span></p>
     <p>Product Description:<p>
     <p class="padding">${product.description.slice(0,100)}</p>
-    <p>Rating: ${product.rating.rate} (${product.rating.count} <small>Ratings</small>)</p>
+    <p>Rating: <span class="color">${product.rating.rate}</span> (${product.rating.count} <small>Ratings</small>)</p>
     <h2>Price: $<span class="color">${product.price}</span></h2>
     <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
   </div >
